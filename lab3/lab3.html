@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ICA-11-AJAX-JSON-IFICATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js'>
+        </script>
+        
+   
+        <link href="lab3.css" rel="stylesheet" type="text/css"/>
+        <script src="lab3.js" type="text/javascript">
+           
+                document.write(document.lastModified);
+          
+        </script>
+    </head>
+    <body>
+        <div id="headerDiv">
+            <h1>ICA-11-AJAX-JSON-IFICATION</h1>
+        </div>
+    <div id='mainDiv'>   
+        <div id="part1div">
+            <table id="table1">
+                <tr>
+                    <td>Tag Name:</td>
+                    <td><input type="text" id="tagNameBox" name="TagName" placeholder="tagDesc to Add"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Minimum:</td>
+                    <td><input type="text" id="minBox" name="Minimum" placeholder="Minimum Tag Value"></td>
+                </tr>
+                <tr>
+                    <td>Maximum</td>
+                    <td><input type="text" id="maxBox" name="Maximum" placeholder="Maximum Tag Value"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="addTagBtn">Add Tag</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="getAllBtn">Get All</button></td>
+                </tr>
+                <tr>
+                    <td>Tag By Filter:
+                    <input type="text" id="tagByFilterBox" placeholder='Tag Description Filter'></td>
+                    <td><button type='button' id='filterBtn'>Filter</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="selectBox" name='selectBox'></select>
+                    </td>
+                    <td><button type='button' id='getHistoricalBtn'>Get Historical</button></td>
+                </tr>
+                <tr>
+                    <td><button type='button' id='getLiveBtn'>Get Live</button></td>
+                    <td><input type="checkbox" id="rTCheckBox">Real Time</td>
+                </tr>
+            </table>
+        </div>
+        <div id="part2div" class="divs">
+            <table id="table2" class="bottomTables">
+                <tbody id="tBody2">
+                </tbody>
+            </table>
+        </div>
+        <div id="part3div" class="divs">
+            <table id="table3" class="bottomTables">
+                <tbody id="tBody3">
+                </tbody>
+            </table>
+        </div>
+        <div id="part4div" class="divs">
+            <table id="table4" class="bottomTables">
+                <tbody id="tBody4">
+                </tbody>
+            </table>
+        </div>
+        <div id="target" class="divs">
+            No DIV Content Yet
+        </div>
+    </div>
+        <div id="footerDiv">
+            &copy 2015
+            
+            <script>
+                document.write(document.lastModified);
+            </script>
+        </div>
+    </body>
+</html>
